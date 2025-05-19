@@ -19,8 +19,6 @@ I also have a strong interest in networking and system integration.
   
 ---
 
----
-
 ## Competitive Programming
 
 I regularly practice problem-solving and algorithms on various platforms to sharpen my coding and logic skills.
