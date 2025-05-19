@@ -30,4 +30,4 @@ I regularly practice problem-solving and algorithms on various platforms to shar
 
 ## Let's Connect!
 
-- LinkedIn: [My LinkedIn Profile]www.linkedin.com/in/ahmadhj
+- LinkedIn: [My LinkedIn Profile](www.linkedin.com/in/ahmadhj)
