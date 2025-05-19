@@ -23,12 +23,11 @@ I also have a strong interest in networking and system integration.
 
 I regularly practice problem-solving and algorithms on various platforms to sharpen my coding and logic skills.
 
-- **LeetCode**: [My LeetCode Profile](https://codeforces.com/profile/Ahmadhj)  
-- **Codeforces**: [My Codeforces Profile](https://leetcode.com/u/Ahmadhj/)  
+- **LeetCode**: [My LeetCode Profile](https://leetcode.com/u/Ahmadhj/)  
+- **Codeforces**: [My Codeforces Profile](https://codeforces.com/profile/Ahmadhj)  
 
 ---
 
 ## Let's Connect!
 
-- LinkedIn:
-  www.linkedin.com/in/ahmadhj
+- LinkedIn: [My LinkedIn Profile]www.linkedin.com/in/ahmadhj
