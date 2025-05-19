@@ -19,6 +19,17 @@ I also have a strong interest in networking and system integration.
   
 ---
 
+---
+
+## Competitive Programming
+
+I regularly practice problem-solving and algorithms on various platforms to sharpen my coding and logic skills.
+
+- **LeetCode**: [My LeetCode Profile](https://codeforces.com/profile/Ahmadhj)  
+- **Codeforces**: [My Codeforces Profile](https://leetcode.com/u/Ahmadhj/)  
+
+---
+
 ## Let's Connect!
 
 - LinkedIn:
