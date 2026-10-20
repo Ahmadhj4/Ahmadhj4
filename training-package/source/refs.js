@@ -1,0 +1,20 @@
+// Official product pages and documentation for the tools named in the program.
+module.exports = [
+  ["Claude Code (Anthropic)", "https://claude.com/product/claude-code"],
+  ["Claude Code documentation: Skills", "https://code.claude.com/docs/en/skills"],
+  ["ChatGPT (OpenAI)", "https://openai.com/chatgpt"],
+  ["Gemini (Google)", "https://gemini.google.com"],
+  ["Perplexity", "https://www.perplexity.ai"],
+  ["NotebookLM (Google)", "https://notebooklm.google"],
+  ["Canva Magic Studio", "https://www.canva.com/magic"],
+  ["Adobe Firefly", "https://www.adobe.com/products/firefly.html"],
+  ["Google Flow (Google Labs)", "https://labs.google/fx/tools/flow"],
+  ["Runway", "https://runwayml.com"],
+  ["Descript", "https://www.descript.com"],
+  ["CapCut", "https://www.capcut.com"],
+  ["Remotion", "https://www.remotion.dev"],
+  ["ElevenLabs", "https://elevenlabs.io"],
+  ["Adobe Podcast Enhance Speech", "https://podcast.adobe.com/enhance"],
+  ["n8n documentation", "https://docs.n8n.io"],
+  ["GitHub Pages", "https://pages.github.com"],
+];
