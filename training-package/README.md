@@ -1,6 +1,6 @@
 # AI Creators Program – Training Package
 
-Training package for **AI-Powered Content Creation, Digital Marketing, Automation & Freelancing**, a program for young people aged 15–19. Prepared under the Green Circle identity. October 2026.
+Funder-facing training package for **AI-Powered Content Creation, Digital Marketing, Automation & Freelancing**, prepared under the Green Circle identity. October 2026.
 
 ## Files
 
@@ -8,66 +8,64 @@ Training package for **AI-Powered Content Creation, Digital Marketing, Automatio
 |---|------|------------|
 | 1 | `01_Concept_Note_AR.pptx` / `.pdf` | Arabic concept note (18 slides, RTL layout) |
 | 2 | `02_Concept_Note_EN.pptx` / `.pdf` | English concept note (18 slides) |
-| 3 | `03_Training_Proposal_AR.docx` / `.pdf` | Arabic detailed training proposal (24 pages, 29 sections) |
-| 4 | `04_Training_Proposal_EN.docx` / `.pdf` | English detailed training proposal (23 pages, 29 sections) |
+| 3 | `03_Training_Proposal_AR.docx` / `.pdf` | Arabic detailed training proposal (20 pages, 18 sections) |
+| 4 | `04_Training_Proposal_EN.docx` / `.pdf` | English detailed training proposal (20 pages, 18 sections) |
 | – | `fonts/` | Cairo and IBM Plex Sans Arabic (SIL Open Font License) |
 | – | `source/` | Content data and build scripts used to generate all four documents |
 
-The PPTX and DOCX files are fully editable. The PDFs are the presentation-safe versions.
+Install the fonts in `fonts/` before editing the PPTX or DOCX files. Without them, PowerPoint and Word substitute other fonts and line breaks may shift.
 
-**Before editing:** install the fonts in `fonts/`. The decks and documents use Cairo for headings and IBM Plex Sans Arabic for Arabic body text (English body text is Calibri). Without these fonts installed, PowerPoint and Word substitute other fonts and line breaks may shift.
+## Program at a glance
 
-## Program design at a glance
+- **96 hours:** 32 sessions of 3 hours, three a week over 12 weeks.
+- **26 h theory and 70 h hands-on** (73% hands-on), summed from the module hours.
+- **11 modules in 7 tracks:**
+  - AI foundations: choosing tools and prompting
+  - Research & content
+  - Build with Claude Code: Claude Code and Skills
+  - Design & images
+  - Video, motion & audio
+  - Automation with n8n
+  - Final project
+- **10 mini projects**, one per module, plus a **final project** that takes one idea to a complete content package.
+- **No pricing** anywhere in the package. Targets and the delivery format are marked "Proposed".
 
-- **96 hours** = 32 sessions × 3 hours, three sessions a week for 11 weeks, plus one buffer week (12 weeks in total, under three months).
-- **28.5 h theory / 67.5 h practice** (about 30/70), summed from the module hours.
-- **11 modules in 7 tracks:** Foundation, Create, Produce, Market, Automate (n8n), Launch, Capstone.
-- **Capstone:** AI-Powered Mini Digital Agency, 19 deliverables, built step by step inside the modules.
-- **Two age tracks:** the 15–17 core track and the 18+ track. Both cover the same curriculum and hours. Tools restricted to 18+ users are shown by the trainer to under-18s.
-- **No pricing** anywhere in the package.
+For every session, the proposal shows four things: what participants learn, the tools they use, what they build themselves, and the output they finish with.
 
-All hour figures come from one data file (`source/data_modules.js`), so every table and chart in all four documents uses the same numbers.
+## Tool verification (October 2026)
 
-## Fact-check log (tool rules, verified October 2026)
+Every tool and feature named in the documents was checked against official product pages or documentation (listed in Section 18 of each proposal):
 
-| Tool | Verified rule | Source |
-|------|---------------|--------|
-| ChatGPT | 13+ (or local minimum); under 18 needs parent/guardian permission; teen protections for under-18s | OpenAI Terms of Use; OpenAI Help Center (parental controls) |
-| Gemini app | 13+ (or local age) with a personal or school account; 18+ with a work account | Gemini Apps Help |
-| Gemini video generation | 18+; Google AI Pro/Ultra for personal accounts | Gemini Apps Help |
-| Google Flow | 18+ with age verification, supported region, eligible Google AI plan | Flow Help Center |
-| Claude | 18+ | Anthropic Consumer Terms (effective 8 Oct 2025) |
-| ElevenLabs | 18+ | ElevenLabs Terms |
-| Canva | Under-13s only through Canva Education | Canva Terms of Use |
-| CapCut | 13+ in most countries, higher in some regions | CapCut Help Center |
-| n8n | Community Edition free to self-host; sharing and projects excluded | n8n Docs |
-| Gemini API / AI Studio | 18+; not for apps directed to under-18s | Gemini API Additional Terms (18 Dec 2025) |
-| Google account | 13 default, varies by country | Google Account Help |
-| GitHub Pages | 13+ | GitHub Terms of Service |
-| Fiverr | Sellers 18+; 13–17 only via a parent's account | Fiverr Help Center |
+- **Claude Code** runs in the terminal, VS Code and the desktop app. Skills are folders with a SKILL.md file in `.claude/skills` or `~/.claude/skills`. Plugin marketplaces are reached through `/plugin`.
+- **Remotion** offers agent skills for Claude Code.
+- **Google Flow** creates video from text, from frames or from reference images ("ingredients"), and has Scenebuilder.
+- **Runway** does image to video and supports references.
+- **Canva Magic Studio** includes Magic Design, Magic Edit, Background Remover, Magic Expand and Magic Animate.
+- **Adobe Firefly** offers text to image and Generative Fill/Expand.
+- **Descript** offers text-based editing, filler word removal, Studio Sound and Underlord.
+- **CapCut** offers auto captions, text to speech and background removal.
+- **ElevenLabs** offers TTS, voice design, sound effects and Eleven Music.
+- **Adobe Podcast** offers Enhance Speech.
+- **NotebookLM** offers Audio Overviews, Video Overviews and mind maps.
+- **Perplexity** gives answers with cited sources.
+- **Gemini** offers Deep Research, Gems and image generation and editing.
+- **n8n** includes the Form Trigger, AI Agent and Google Sheets nodes.
 
-Full URLs are listed in Section 29 of each proposal. Direct access to some official pages was blocked in the drafting environment, so those pages were read through search-engine excerpts. **Re-check all of these rules 2–4 weeks before launch.**
-
-**Not verified, marked TBD in the documents:** the age terms for n8n Cloud, Upwork's age rule, and teen access to image generation in ChatGPT and Gemini.
+Tool logos appear only for tools with a published official mark, taken from simple-icons: Claude, Gemini, n8n, ElevenLabs, Perplexity, NotebookLM and Google Sheets. Other tools are shown by name.
 
 ## Brand use
 
-- Only the supplied Green Circle logo is used, unmodified, on its original black background.
-- Brand colours were sampled from the logo itself: green `#4DB449`, lime `#A6D04B`, grey `#727274`, black `#000000`. White and light neutral tints are used for page backgrounds.
-- No official Green Circle brand guidelines were supplied. Fonts and neutral tints were therefore chosen for this package; they are not presented as official brand assets.
-- The only tool logo is the n8n mark, used on the n8n slide (source: simple-icons, which cites n8n.io/press). The icons are generic Lucide icons and are not presented as official.
-
-## Open items (TBD)
-
-Delivery location, dates and schedule · cohort size and selection criteria · n8n hosting model and AI provider · access plan for 18+ tools · community partners and Demo Day guests · certificate format and issuing body · safeguarding procedure of the host organisation · delivery language and scope of bilingual materials.
-
-Every target percentage (KPIs, assessment weights, rubric weights) is marked **Proposed**.
+- The supplied Green Circle logo is used unmodified, on its original black background.
+- Brand colours are sampled from the logo itself: `#4DB449`, `#A6D04B`, `#727274` and black. White and light neutral tints are used for page backgrounds.
 
 ## QA performed
 
-- **Content:** module hours sum to 96, and each module's session count × 3 h matches its hours. KPIs, hours and names are the same across all four files. The files contain no pricing and no leftover placeholder text.
-- **Files:** all PPTX and DOCX files pass OOXML validation. Bookmark IDs in the DOCX are renumbered so that the contents page numbers resolve.
-- **Visual:** every slide and page was rendered to PDF and checked for overflow, overlap, RTL/LTR direction, mixed Arabic/Latin bidi issues, logo placement, table widths and page breaks, then fixed and re-rendered.
+- **Content:**
+  - Module hours sum to 96, and each module's session count × 3 h matches its hours.
+  - The documents contain no references to age groups, no risks section, no decisions list, no TBD notes and no pricing.
+  - Arabic and English are written separately, not translated line by line.
+- **Files:** all PPTX and DOCX files pass OOXML validation, and the contents page numbers resolve.
+- **Visual:** every slide and page was rendered and checked for overflow, overlap, RTL/LTR direction, mixed Arabic/Latin text, table widths and page breaks.
 
 ## Rebuilding
 
@@ -75,9 +73,9 @@ From `source/` (Node 18+, LibreOffice, Poppler):
 
 ```bash
 npm install pptxgenjs docx react react-dom react-icons sharp playwright
-node render_diagrams.js en && node render_diagrams.js ar   # proposal diagrams
-bash run_decks.sh                                            # concept notes
-bash run_docs.sh                                             # proposals
+node render_diagrams.js en && node render_diagrams.js ar
+bash run_decks.sh
+bash run_docs.sh
 ```
 
 `run_decks.sh` and `run_docs.sh` refer to local paths of the validation helpers used during drafting; adjust these paths, or remove the validation lines, before running.
