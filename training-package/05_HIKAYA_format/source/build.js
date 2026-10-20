@@ -112,22 +112,23 @@ async function build() {
     T(s, bl(["A complete, hands-on AI content program on its site, with no design burden", "Participants who leave with finished work and portfolios", "A Demo Day the Institute can host and showcase", "Measured, reported results it can cite", "A curriculum that can run again with new cohorts, if agreed"], { color: C.white }), { x: 6.22, y: 2.15, w: 3.15, h: 2.75, fontSize: 11.5, color: C.white });
   }
 
-  // 4 THE NEED
+  // 4 OUTCOMES
   {
-    const s = slide(); header(s, "CH 3  ·  THE NEED", "Many use AI. Few use it for real work");
-    T(s, "Typical starting point", { x: 0.5, y: 1.4, w: 4, h: 0.3, fontSize: 13, bold: true, color: C.muted });
-    T(s, "What the program builds", { x: 5.0, y: 1.4, w: 4, h: 0.3, fontSize: 13, bold: true, color: C.teal });
-    const rows = [["Using AI to get quick answers", "Using AI to produce work a client can use"], ["Tool tips picked up from social media", "A structured path from idea to published campaign"], ["Accepting whatever the tool returns", "Checking facts, editing drafts and labelling AI content"], ["No proof of what they can do", "A portfolio, a capstone project and a live presentation"]];
-    rows.forEach((r, i) => {
-      const y = 1.8 + i * 0.73;
-      box(s, 0.5, y, 4.0, 0.62, C.light);
-      T(s, r[0], { x: 0.68, y, w: 3.7, h: 0.62, fontSize: 12.5, color: C.body, valign: "middle" });
-      ico(s, "LuArrowRight", C.orange, 4.6, y + 0.17, 0.28);
-      box(s, 5.0, y, 4.5, 0.62, C.navy);
-      circ(s, 5.17, y + 0.24, 0.14, C.orange);
-      T(s, r[1], { x: 5.45, y, w: 3.95, h: 0.62, fontSize: 12.5, bold: true, color: C.white, valign: "middle" });
+    const s = slide(); header(s, "CH 3  ·  OUTCOMES", "What participants will be able to do");
+    box(s, 0.5, 1.4, 3.55, 3.65, C.navy);
+    iconDot(s, "LuTarget", 0.65, 1.53, 0.42, C.orange, C.navy);
+    T(s, "Program objectives", { x: 1.17, y: 1.53, w: 2.8, h: 0.42, fontSize: 14, bold: true, color: C.orange, valign: "middle" });
+    T(s, bl(["Practical AI literacy: how AI tools work, where they fail, how to use them safely and honestly", "A repeatable process from client request to published content", "Core content skills: copy, hooks and CTAs, characters, voice, visuals, scripts, storyboards, video", "Digital marketing planning: personas, objectives, calendars, campaigns", "Hands-on automation with n8n", "Presenting work and approaching freelance opportunities responsibly"], { color: C.white }), { x: 0.67, y: 2.05, w: 3.28, h: 2.95, fontSize: 10.5, color: C.white });
+    box(s, 4.25, 1.4, 5.25, 3.65, C.light);
+    iconDot(s, "LuGraduationCap", 4.4, 1.53, 0.42, C.teal);
+    T(s, "Learning outcomes: by the end, each participant can", { x: 4.92, y: 1.53, w: 4.5, h: 0.42, fontSize: 14, bold: true, color: C.teal, valign: "middle" });
+    const lo = ["Turn a vague request into a one-page brief backed by verified research", "Write structured prompts and reusable context packs", "Produce a carousel, captions with CTAs and consistent brand visuals", "Design an AI character with a character sheet and voice profile", "Script, storyboard, produce and edit a 30–45 second captioned video", "Build a persona, a four-week content calendar and a campaign plan", "Build an n8n workflow (form → AI → Google Sheets) and explain each step", "Publish a one-page portfolio and describe three service offers", "Present a team capstone and the decisions behind it"];
+    lo.forEach((t, i) => {
+      const y = 2.06 + i * 0.33;
+      circ(s, 4.42, y + 0.03, 0.24, C.teal);
+      T(s, String(i + 1), { x: 4.42, y: y + 0.03, w: 0.24, h: 0.24, fontSize: 9, bold: true, color: C.white, align: "center", valign: "middle" });
+      T(s, t, { x: 4.78, y, w: 4.6, h: 0.3, fontSize: 10.5, color: C.body, valign: "middle" });
     });
-    T(s, "The starting point is an assumption; the pre-assessment in session 1 confirms it for each cohort.", { x: 0.5, y: 4.78, w: 9, h: 0.3, fontSize: 10.5, italic: true, color: C.muted });
   }
 
   // 5 THE JOURNEY
@@ -141,8 +142,8 @@ async function build() {
       T(s, t[1], { x: x + 0.13, y: y + 0.66, w: 1.9, h: 0.52, fontSize: 13, bold: true, color: dark ? C.white : C.navy, valign: "middle" });
       T(s, String(i + 1).padStart(2, "0"), { x: x + 1.5, y: y + 0.12, w: 0.5, h: 0.3, fontSize: 11, bold: true, color: dark ? C.orange : C.teal, align: "right" });
     });
-    box(s, 0.5, 4.15, 9.0, 0.9, C.navy);
-    T(s, [{ text: "Why this focus: ", options: { bold: true, color: C.orange } }, { text: "small businesses, NGOs and community initiatives need steady content but often lack the time or skills to produce it. AI Creators trains participants to deliver that work with AI tools, step by step, the way a small agency works with a real client.", options: { color: C.white } }], { x: 0.68, y: 4.15, w: 8.65, h: 0.9, fontSize: 12, valign: "middle" });
+    box(s, 0.5, 4.1, 9.0, 0.98, C.navy);
+    T(s, [{ text: "Why this focus: ", options: { bold: true, color: C.orange } }, { text: "many people already use AI for quick answers, but few use it to produce work a client can use. Small businesses, NGOs and community initiatives need steady content and often lack the time or skills to make it. AI Creators trains participants to deliver that work with AI tools, step by step, the way a small agency works with a real client.", options: { color: C.white } }], { x: 0.68, y: 4.1, w: 8.65, h: 0.98, fontSize: 11.5, valign: "middle" });
   }
 
   // 6 LEARN (chart)
@@ -168,23 +169,22 @@ async function build() {
     ], { x: 6.37, y: 2.1, w: 3.0, h: 2.85, fontSize: 12, color: C.body, paraSpaceAfter: 3 });
   }
 
-  // 7–8 MODULE TABLES
-  const modTable = (s, mods) => {
-    const head = ["Module", "Hours", "Key tools", "Participants produce"].map((h) => ({ text: h, options: { bold: true, color: C.white, fill: { color: C.navy }, fontSize: 10.5 } }));
-    const rows = [head, ...mods.map((m, i) => {
+  // 7 MODULES (single table)
+  {
+    const s = slide(); header(s, "CH 6  ·  MODULES", "Eleven modules at a glance");
+    const head = ["Module", "h", "Key tools", "Participants produce"].map((h) => ({ text: h, options: { bold: true, color: C.white, fill: { color: C.navy }, fontSize: 9.5 } }));
+    const rows = [head, ...M.map((m, i) => {
       const fill = { color: i % 2 ? C.white : C.light };
       return [
-        { text: [{ text: m.id + "  ", options: { bold: true, color: C.teal } }, { text: m.en.name, options: { bold: true, color: C.navy } }], options: { fill } },
+        { text: [{ text: m.id + "  ", options: { bold: true, color: C.teal } }, { text: m.en.short, options: { bold: true, color: C.navy } }], options: { fill } },
         { text: String(m.T + m.P), options: { fill, align: "center", bold: true, color: C.navy } },
-        { text: m.en.tools.map(strip).join(", "), options: { fill } },
+        { text: m.en.tools.map(strip).join(", ").replace("Recorded narration (phone or USB mic)", "recorded narration"), options: { fill } },
         { text: m.en.deliverable.replace(/\s*\(Capstone milestone(?: 1)?\)/, ""), options: { fill } },
       ];
     })];
-    s.addTable(rows, { x: 0.5, y: 1.4, w: 9.0, colW: [2.75, 0.6, 2.45, 3.2], fontFace: BF, fontSize: 10, color: C.body, valign: "middle", margin: [0.04, 0.08, 0.04, 0.08], border: { type: "solid", pt: 0.5, color: "DDE3E9" }, rowH: 0.36 });
-  };
-  { const s = slide(); header(s, "CH 6  ·  MODULES", "Modules M1–M6 at a glance"); modTable(s, M.slice(0, 6)); }
-  { const s = slide(); header(s, "CH 6  ·  MODULES", "Modules M7–M11 at a glance"); modTable(s, M.slice(6));
-    T(s, "Google Flow and AI voice tools are used where account access allows; otherwise the trainer demonstrates them and participants use recorded narration and their own footage.", { x: 0.5, y: 4.62, w: 9, h: 0.42, fontSize: 10.5, italic: true, color: C.muted }); }
+    s.addTable(rows, { x: 0.5, y: 1.35, w: 9.0, colW: [2.1, 0.35, 2.85, 3.7], fontFace: BF, fontSize: 8.5, color: C.body, valign: "middle", margin: [0.02, 0.06, 0.02, 0.06], border: { type: "solid", pt: 0.5, color: "DDE3E9" }, rowH: 0.3 });
+    s.addNotes("Google Flow and AI voice tools are used where account access allows; otherwise the trainer demonstrates them and participants use recorded narration and their own footage.");
+  }
 
   // 9 THE PLAN
   {
@@ -215,27 +215,50 @@ async function build() {
     const loop = [["LuEye", "See it", "Short concept and live demo"], ["LuSquarePen", "Try it", "Guided exercise in pairs"], ["LuHammer", "Build it", "Apply it to the capstone client"], ["LuPresentation", "Show it", "Share, get feedback, improve"]];
     loop.forEach((l, i) => {
       const x = 0.5 + i * 2.29, dark = i === 2;
-      box(s, x, 1.42, 2.11, 1.45, dark ? C.navy : C.light);
-      iconDot(s, l[0], x + 0.15, 1.57, 0.46, dark ? C.orange : C.teal, dark ? C.navy : C.white);
-      T(s, `${i + 1}. ${l[1]}`, { x: x + 0.15, y: 2.1, w: 1.85, h: 0.35, fontSize: 14, bold: true, color: dark ? C.orange : C.teal });
-      T(s, l[2], { x: x + 0.15, y: 2.45, w: 1.85, h: 0.38, fontSize: 11, color: dark ? C.white : C.body });
+      box(s, x, 1.38, 2.11, 0.82, dark ? C.navy : C.light);
+      iconDot(s, l[0], x + 0.12, 1.5, 0.4, dark ? C.orange : C.teal, dark ? C.navy : C.white);
+      T(s, `${i + 1}. ${l[1]}`, { x: x + 0.6, y: 1.44, w: 1.45, h: 0.3, fontSize: 12.5, bold: true, color: dark ? C.orange : C.teal });
+      T(s, l[2], { x: x + 0.6, y: 1.74, w: 1.45, h: 0.42, fontSize: 9.5, color: dark ? C.white : C.body });
     });
-    T(s, "A typical 3-hour session", { x: 0.5, y: 3.08, w: 5, h: 0.3, fontSize: 13, bold: true, color: C.navy });
-    const seg = [[50, C.muted, "Concept & demo", "0:00–0:50"], [105, C.teal, "Hands-on build", "0:50–2:35"], [25, C.navy, "Show & feedback", "2:35–3:00"]];
+    const seg = [[50, C.muted, "Concept & demo  0:00–0:50"], [105, C.teal, "Hands-on build  0:50–2:35"], [25, C.navy, "Show  2:35–3:00"]];
     let x = 0.5;
-    seg.forEach((g) => {
-      const w = 9.0 * g[0] / 180;
-      s.addShape(pres.shapes.RECTANGLE, { x, y: 3.45, w: w - 0.03, h: 0.48, fill: { color: g[1] }, line: { color: g[1] } });
-      T(s, g[2], { x, y: 3.45, w: w - 0.03, h: 0.48, fontSize: g[0] < 30 ? 9.5 : 11.5, bold: true, color: C.white, align: "center", valign: "middle" });
-      T(s, g[3], { x, y: 3.97, w: w - 0.03, h: 0.22, fontSize: 9.5, color: C.muted, align: "center" });
-      x += w;
+    seg.forEach((g) => { const w = 9.0 * g[0] / 180; s.addShape(pres.shapes.RECTANGLE, { x, y: 2.32, w: w - 0.03, h: 0.36, fill: { color: g[1] }, line: { color: g[1] } }); T(s, g[2], { x, y: 2.32, w: w - 0.03, h: 0.36, fontSize: g[0] < 30 ? 8.5 : 10.5, bold: true, color: C.white, align: "center", valign: "middle" }); x += w; });
+    T(s, "Twelve structured exercises", { x: 0.5, y: 2.82, w: 5, h: 0.3, fontSize: 13, bold: true, color: C.navy });
+    const ex = [["M1", "Spot the error", "Fix five AI answers with sources"], ["M2", "Prompt upgrade", "One prompt, three versions, scored"], ["M3", "Fact-check race", "Verify six claims with sources"], ["M3", "Client role-play", "Interview a vague client, write the brief"], ["M4", "Hook clinic", "Ten hooks, peers shortlist three"], ["M5", "One character, four scenes", "Keep a character consistent"], ["M6", "60 to 30", "Halve a script, keep the message"], ["M7", "Continuity challenge", "Three matching consecutive shots"], ["M8", "Campaign sprint", "Two-week campaign in 60 minutes"], ["M9", "Content Idea Generator", "Form → AI → Sheets in n8n"], ["M10", "Client inbox", "Reply to three client messages"], ["M11", "Demo Day dry run", "Rehearse with peer feedback"]];
+    ex.forEach((e, i) => {
+      const c = i % 4, r = Math.floor(i / 4), ex0 = 0.5 + c * 2.27, ey = 3.18 + r * 0.62;
+      box(s, ex0, ey, 2.17, 0.55, i % 2 ? C.light : C.tealSoft);
+      T(s, e[0], { x: ex0 + 0.08, y: ey + 0.05, w: 0.42, h: 0.22, fontSize: 8.5, bold: true, color: C.teal });
+      T(s, e[1], { x: ex0 + 0.5, y: ey + 0.04, w: 1.62, h: 0.24, fontSize: 10, bold: true, color: C.navy });
+      T(s, e[2], { x: ex0 + 0.08, y: ey + 0.28, w: 2.05, h: 0.24, fontSize: 8.5, color: C.body });
     });
-    T(s, "12 structured exercises, one capstone client per team, and a portfolio folder that grows every session.", { x: 0.5, y: 4.45, w: 9, h: 0.5, fontSize: 14, bold: true, color: C.navy });
+  }
+
+  // 10b PRACTICE IN ACTION
+  {
+    const s = slide(); header(s, "CH 9  ·  IN ACTION", "What participants actually do, step by step");
+    const flows = [["LuPenLine", "Content", ["One idea", "Reel hook", "Carousel", "Caption + CTA"], "Carousel and 5 captions"], ["LuClapperboard", "Video", ["Character", "Voice", "Script", "Storyboard", "AI video", "Edit & publish"], "30–45 second video"], ["LuMegaphone", "Marketing", ["Persona", "SMART objective", "4-week calendar", "Campaign"], "Campaign one-pager"], ["LuWorkflow", "Automation (n8n)", ["Form", "n8n", "AI step", "Hook · caption · CTA", "Google Sheets"], "Working workflow"], ["LuBriefcase", "Freelancing", ["Build a page", "Package 3 services", "Client messages"], "Portfolio and offers"]];
+    flows.forEach((f, i) => {
+      const y = 1.38 + i * 0.74, dark = i === 3;
+      box(s, 0.5, y, 1.75, 0.62, dark ? C.navy : C.teal);
+      ico(s, f[0], dark ? C.orange : "FFFFFF", 0.62, y + 0.17, 0.28);
+      T(s, f[1], { x: 0.98, y, w: 1.25, h: 0.62, fontSize: 11.5, bold: true, color: C.white, valign: "middle" });
+      const steps = f[2], cw = 5.45, gap = 0.17, w = (cw - gap * (steps.length - 1)) / steps.length;
+      steps.forEach((st, j) => {
+        const sx = 2.38 + j * (w + gap);
+        box(s, sx, y + 0.08, w, 0.46, C.light);
+        T(s, st, { x: sx + 0.04, y: y + 0.08, w: w - 0.08, h: 0.46, fontSize: steps.length > 5 ? 9 : 10, bold: true, color: C.navy, align: "center", valign: "middle" });
+        if (j < steps.length - 1) ico(s, "LuChevronRight", C.orange, sx + w + 0.015, y + 0.24, 0.14);
+      });
+      box(s, 7.95, y + 0.08, 1.55, 0.46, C.orangeSoft);
+      T(s, f[3], { x: 7.99, y: y + 0.08, w: 1.47, h: 0.46, fontSize: 9.5, bold: true, color: C.navy, align: "center", valign: "middle" });
+    });
+    T(s, "Each workflow is practised on the team's capstone client, so every output also becomes part of the final package.", { x: 0.5, y: 5.0, w: 9, h: 0.2, fontSize: 9.5, italic: true, color: C.muted });
   }
 
   // 11 TOOLS
   {
-    const s = slide(); header(s, "CH 9  ·  TOOLS", "The AI tools participants learn to use");
+    const s = slide(); header(s, "CH 10  ·  TOOLS", "The AI tools participants learn to use");
     const cards = [["LuMessageSquare", "AI assistants", "ChatGPT · Gemini", "Research, prompting, writing and editing"], ["LuPalette", "Design & images", "Canva · ChatGPT / Gemini images", "Carousels, characters, brand visuals"], ["LuClapperboard", "Video", "Google Flow · CapCut", "Generated shots, editing, captions"], ["LuMic", "Voice", "ElevenLabs · recorded narration", "Voice profiles and 30-second narration"], ["LuWorkflow", "Automation", "n8n · Google Sheets", "Form → AI → Sheets content workflow"], ["LuGlobe", "Web & portfolio", "AI canvas · GitHub Pages", "A published one-page portfolio"]];
     cards.forEach((c, i) => {
       const r = Math.floor(i / 3), col = i % 3, x = 0.5 + col * 3.05, y = 1.42 + r * 1.78;
@@ -250,7 +273,7 @@ async function build() {
 
   // 12 CAPSTONE
   {
-    const s = slide(); header(s, "CH 10  ·  CAPSTONE", "Capstone: an AI-powered mini digital agency");
+    const s = slide(); header(s, "CH 11  ·  CAPSTONE", "Capstone: an AI-powered mini digital agency");
     T(s, "Teams of 3–4 choose a real or realistic client (a small business, NGO, local shop or community initiative) and deliver a complete campaign package.", { x: 0.5, y: 1.35, w: 9, h: 0.45, fontSize: 12, color: C.body });
     const ph = [["Discover", ["Research", "Client brief", "Audience persona", "Marketing objective"]], ["Plan", ["Content strategy", "Content calendar", "Marketing campaign"]], ["Create", ["AI character", "Voice profile", "Visual assets", "Video scripts", "Storyboard", "AI video", "Edited final video", "Social posts"]], ["Automate & launch", ["n8n automation", "Landing page"]], ["Present", ["Portfolio case study", "Final presentation"]]];
     let k = 0;
@@ -270,47 +293,59 @@ async function build() {
     T(s, "19 deliverables. Team roles rotate: strategist · content lead · visual & video lead · automation lead.", { x: 0.5, y: 4.78, w: 9, h: 0.3, fontSize: 11.5, bold: true, color: C.navy });
   }
 
-  // 13 PROVING PROGRESS
+  // 13 ASSESSMENT
   {
-    const s = slide(); header(s, "CH 11  ·  PROVING PROGRESS", "Measuring real change, before and after");
-    const cards = [[C.navy, "BEFORE", "Session 1", "Knowledge check (50 pts) and a 30-minute practical task (50 pts), plus a self-rating. Sets each person's baseline; not graded."], [C.teal, "AFTER", "Session 32", "Same structure and scoring, with parallel questions and a new brief. Gain = post minus pre, out of 100."], [C.red, "LATER", "3 months (proposed)", "Short follow-up survey on skills use, portfolio activity and opportunities pursued."]];
+    const s = slide(); header(s, "CH 12  ·  ASSESSMENT", "How progress and work are assessed");
+    const cards = [[C.navy, "BEFORE · Session 1", "Knowledge check (50) + practical task (50). Baseline, not graded."], [C.teal, "DURING · Every module", "Deliverable checklists; week-6 mid-point review."], [C.navy, "AFTER · Session 32", "Same test, parallel questions. Gain = post − pre."], [C.red, "LATER · 3 months", "Follow-up survey on skills use (proposed)."]];
     cards.forEach((c, i) => {
-      const x = 0.5 + i * 3.1;
-      box(s, x, 1.42, 2.9, 1.95, c[0]);
-      T(s, c[1], { x: x + 0.17, y: 1.55, w: 2.6, h: 0.25, fontSize: 11, bold: true, color: C.orange === c[0] ? C.navy : (i === 2 ? C.white : C.orange) });
-      T(s, c[2], { x: x + 0.17, y: 1.82, w: 2.6, h: 0.4, fontFace: HF, fontSize: 18, bold: true, color: C.white });
-      T(s, c[3], { x: x + 0.17, y: 2.27, w: 2.6, h: 1.05, fontSize: 11, color: C.white });
+      const x = 0.5 + i * 2.29;
+      box(s, x, 1.38, 2.11, 1.12, c[0]);
+      T(s, c[1], { x: x + 0.12, y: 1.45, w: 1.9, h: 0.28, fontSize: 10.5, bold: true, color: i === 3 ? C.white : C.orange });
+      T(s, c[2], { x: x + 0.12, y: 1.75, w: 1.9, h: 0.7, fontSize: 9.5, color: C.white });
     });
-    box(s, 0.5, 3.55, 4.4, 1.5, C.light);
-    iconDot(s, "LuClipboardList", 0.65, 3.68, 0.42, C.teal);
-    T(s, "What is measured", { x: 1.17, y: 3.68, w: 3.5, h: 0.42, fontSize: 14, bold: true, color: C.teal, valign: "middle" });
-    T(s, "AI basics and prompting · fact-checking · marketing terms · automation concepts · a practical content task scored by rubric · self-rated confidence", { x: 0.65, y: 4.15, w: 4.15, h: 0.85, fontSize: 11, color: C.body });
-    box(s, 5.1, 3.55, 4.4, 1.5, C.light);
-    iconDot(s, "LuTarget", 5.25, 3.68, 0.42, C.teal);
-    T(s, "Target and quality control", { x: 5.77, y: 3.68, w: 3.6, h: 0.42, fontSize: 14, bold: true, color: C.teal, valign: "middle" });
-    T(s, "+25 points average gain (proposed). The same rubric is used for the practical task, module deliverables and capstone, so results can be compared.", { x: 5.25, y: 4.15, w: 4.15, h: 0.85, fontSize: 11, color: C.body });
+    box(s, 0.5, 2.65, 3.6, 2.4, C.light);
+    T(s, "Final grade (proposed)", { x: 0.65, y: 2.73, w: 3.3, h: 0.32, fontSize: 13, bold: true, color: C.teal });
+    [["Module deliverables", 40], ["Capstone package", 35], ["Demo Day presentation", 15], ["Participation & reflection", 10]].forEach((w, i) => {
+      const y = 3.08 + i * 0.4;
+      T(s, w[0], { x: 0.65, y, w: 2.2, h: 0.22, fontSize: 10, color: C.navy, bold: true });
+      s.addShape(pres.shapes.RECTANGLE, { x: 0.65, y: y + 0.23, w: 2.75 * w[1] / 40, h: 0.13, fill: { color: i === 0 ? C.teal : i === 1 ? C.navy : C.orange }, line: { color: i === 0 ? C.teal : i === 1 ? C.navy : C.orange } });
+      T(s, `${w[1]}%`, { x: 3.45, y: y + 0.12, w: 0.55, h: 0.3, fontSize: 11, bold: true, color: C.navy });
+    });
+    T(s, "Completion: 80% attendance + capstone submitted.", { x: 0.65, y: 4.78, w: 3.35, h: 0.22, fontSize: 9, italic: true, color: C.muted });
+    box(s, 4.3, 2.65, 5.2, 2.4, C.light);
+    T(s, "Capstone rubric (proposed): “meets standard” = 3 of 4", { x: 4.45, y: 2.73, w: 5, h: 0.32, fontSize: 13, bold: true, color: C.teal });
+    [["Brief and research", "15%", "Clear objective; claims verified"], ["Content quality", "20%", "On-brand copy, strong hooks and CTAs"], ["Visual and video", "20%", "Consistent visuals; captioned, clean audio"], ["Marketing plan", "15%", "Persona, SMART objective, realistic calendar"], ["Automation", "10%", "Workflow runs; team can explain it"], ["Responsible AI", "10%", "AI content labelled; no misuse of data"], ["Presentation", "10%", "Clear story of decisions and results"]].forEach((r, i) => {
+      const y = 3.1 + i * 0.27;
+      T(s, r[0], { x: 4.45, y, w: 1.55, h: 0.26, fontSize: 9.5, bold: true, color: C.navy, valign: "middle" });
+      T(s, r[1], { x: 6.0, y, w: 0.45, h: 0.26, fontSize: 9.5, bold: true, color: C.orange, valign: "middle" });
+      T(s, r[2], { x: 6.45, y, w: 2.95, h: 0.26, fontSize: 9.5, color: C.body, valign: "middle" });
+    });
   }
 
   // 14 RESULTS FRAMEWORK
   {
-    const s = slide(); header(s, "CH 12  ·  EVIDENCE", "Results framework: what will be reported");
-    const rows = [["Program completion", "Attendance at 80%+ of sessions", C.light], ["Pre/post improvement", "Same assessment at start and end", C.light], ["Practical assignments", "Module deliverables submitted", C.light], ["Video project", "Edited video meets the rubric", C.tealSoft], ["Automation project", "Workflow runs end to end", C.tealSoft], ["Capstone & presentation", "Rubric score of 3/4 or higher", C.tealSoft], ["Portfolio completion", "Published page with 3+ pieces", C.orangeSoft], ["Freelance readiness", "Readiness checklist completed", C.orangeSoft]];
+    const s = slide(); header(s, "CH 13  ·  EVIDENCE", "Results framework: what will be reported");
+    const rows = [["Program completion", "Attendance 80%+", "85%", C.light], ["Pre/post improvement", "Same test, start and end", "+25 pts", C.light], ["Practical assignments", "Deliverables submitted", "90%", C.light], ["Video project", "Meets the rubric", "85%", C.tealSoft], ["Automation project", "Runs end to end", "80%", C.tealSoft], ["Capstone & presentation", "Rubric 3/4 or higher", "80% teams", C.tealSoft], ["Portfolio completion", "Page with 3+ pieces", "80%", C.orangeSoft], ["Freelance readiness", "Checklist completed", "75%", C.orangeSoft]];
+    T(s, "Indicator", { x: 0.65, y: 1.33, w: 2, h: 0.22, fontSize: 9, bold: true, color: C.muted });
+    T(s, "How it is measured", { x: 2.85, y: 1.33, w: 2, h: 0.22, fontSize: 9, bold: true, color: C.muted });
+    T(s, "Proposed target", { x: 4.85, y: 1.33, w: 1.1, h: 0.22, fontSize: 9, bold: true, color: C.muted, align: "right" });
     rows.forEach((r, i) => {
-      const y = 1.4 + i * 0.46;
-      box(s, 0.5, y, 5.4, 0.4, r[2]);
-      T(s, r[0], { x: 0.65, y, w: 2.5, h: 0.4, fontSize: 11.5, bold: true, color: C.navy, valign: "middle" });
-      T(s, r[1], { x: 3.2, y, w: 2.6, h: 0.4, fontSize: 10.5, color: C.body, valign: "middle" });
+      const y = 1.58 + i * 0.43;
+      box(s, 0.5, y, 5.55, 0.37, r[3]);
+      T(s, r[0], { x: 0.65, y, w: 2.2, h: 0.37, fontSize: 11, bold: true, color: C.navy, valign: "middle" });
+      T(s, r[1], { x: 2.85, y, w: 2.0, h: 0.37, fontSize: 10, color: C.body, valign: "middle" });
+      T(s, r[2], { x: 4.85, y, w: 1.1, h: 0.37, fontSize: 11, bold: true, color: C.teal, align: "right", valign: "middle" });
     });
-    box(s, 6.1, 1.4, 3.4, 3.62, C.light);
-    iconDot(s, "LuStar", 6.25, 1.53, 0.42, C.teal);
-    T(s, "Key targets (proposed)", { x: 6.77, y: 1.53, w: 2.6, h: 0.42, fontSize: 14, bold: true, color: C.teal, valign: "middle" });
-    T(s, bl(["85% complete the program", "+25 points average gain", "90% of deliverables submitted", "85% complete the video project", "80% build a working automation", "80% of teams score 3/4+ on the capstone", "80% publish a portfolio", "75% meet the readiness checklist"]), { x: 6.27, y: 2.07, w: 3.1, h: 2.4, fontSize: 11, color: C.body });
-    T(s, "Income is not used as a headline indicator.", { x: 6.27, y: 4.55, w: 3.1, h: 0.4, fontSize: 10.5, italic: true, color: C.muted });
+    box(s, 6.25, 1.38, 3.25, 3.67, C.navy);
+    iconDot(s, "LuBadgeCheck", 6.4, 1.51, 0.42, C.orange, C.navy);
+    T(s, "Freelance readiness checklist", { x: 6.92, y: 1.51, w: 2.5, h: 0.42, fontSize: 13, bold: true, color: C.orange, valign: "middle" });
+    T(s, bl(["Published portfolio page with at least three pieces", "Three written service packages with scope and deliverables", "A reusable creative brief template", "Client message templates: first contact, scope, revisions, delivery", "Knows the rules of the platforms they may use", "Has presented work to an audience"], { color: C.white }), { x: 6.42, y: 2.05, w: 2.98, h: 2.6, fontSize: 10.5, color: C.white });
+    T(s, "Income is not used as a headline indicator.", { x: 6.42, y: 4.68, w: 3, h: 0.3, fontSize: 9.5, italic: true, color: "C9D1DA" });
   }
 
   // 15 SAFE BY DESIGN
   {
-    const s = slide(); header(s, "CH 13  ·  RESPONSIBLE AI", "Responsible AI, built into every module");
+    const s = slide(); header(s, "CH 14  ·  RESPONSIBLE AI", "Responsible AI, built into every module");
     const it = [["LuBadgeCheck", "Checked tools", "Every tool is checked against its terms before each cohort"], ["LuScanFace", "No real likeness", "No real person's face or voice is generated without consent"], ["LuKeyRound", "Protected credentials", "API keys and logins are owned and managed by the program"], ["LuCircleCheck", "Verify before publishing", "Facts are checked against sources; AI content is labelled"], ["LuLock", "Privacy first", "No personal data of participants or clients goes into AI tools"], ["LuCopyright", "Respect copyright", "Licensed or self-made assets only, with sources credited"]];
     it.forEach((t, i) => {
       const r = Math.floor(i / 3), c = i % 3, x = 0.5 + c * 3.05, y = 1.42 + r * 1.45;
@@ -325,8 +360,8 @@ async function build() {
 
   // 16 DELIVERY & OUTCOMES
   {
-    const s = slide(); header(s, "CH 14  ·  DELIVERY", "Delivery and what participants keep");
-    const f = [["LuMapPin", "Venue", "In person, computer lab at Jubilee Institute*"], ["LuClock", "Rhythm", "3 sessions × 3 hours per week, 12 weeks"], ["LuUsers", "Team", "Lead trainer and assistant trainer per cohort"], ["LuGraduationCap", "Cohort", "20 participants (proposed)"], ["LuLaptop", "Set-up", "Laptop per participant, stable internet, headsets, recording corner"]];
+    const s = slide(); header(s, "CH 15  ·  DELIVERY", "Delivery and what participants keep");
+    const f = [["LuMapPin", "Venue", "In person, computer lab at Jubilee Institute*"], ["LuClock", "Rhythm", "3 sessions × 3 hours per week, 12 weeks"], ["LuUsers", "Team", "Lead trainer (hands-on content, marketing, AI and n8n) + assistant"], ["LuGraduationCap", "Cohort", "20 participants (proposed)"], ["LuLaptop", "Set-up", "Laptop per participant, stable internet, headsets, recording corner"]];
     f.forEach((r, i) => {
       const y = 1.42 + i * 0.73;
       box(s, 0.5, y, 4.6, 0.64, C.light);
